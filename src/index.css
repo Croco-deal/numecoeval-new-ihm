@@ -11,3 +11,16 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 } */
+
+.tooltip {
+  position: absolute;
+  z-index: 9999;
+}
+
+.form-group {
+  text-align: left;
+  width : 40%; 
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+} 

@@ -1,4 +1,5 @@
 import { Component } from 'react';
+import { HEADER } from '../../common/Constantes';
 import { Outlet } from 'react-router-dom';
 
 export default class Header extends Component {
@@ -19,7 +20,7 @@ export default class Header extends Component {
                     </a>
                   </div>
                 </div>
-                <p class="header__title">Calculateur SIH</p>
+                <p class="header__title">{HEADER.TITRE}</p>
               </div>
               <div className="header-principal-right">
                 <div className="header-principal__nav">
@@ -36,7 +37,7 @@ export default class Header extends Component {
                       <nav role="navigation" aria-label="Menu principal">
                         <ul className="navbar-nav nav-lvl--1">
                           <li id="referentiels" className={`nav-item common-nav-item ${window.location.pathname==="/inventaires" ? "is-active" : ""}`}>
-                            <a className="nav-link" href="/inventaires">Inventaires</a>
+                            <a className="nav-link" href="/inventaires">{HEADER.ONGLET_1}</a>
                           </li>
                         </ul>
                       </nav>
